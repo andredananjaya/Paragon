@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-11-08T15:19:19.224Z",
+    "end": "2025-11-08T15:19:19.606Z",
+    "duration": 382,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8949be42-a665-47c3-99db-f1f3a8ef4386",
+      "title": "",
+      "fullFile": "cypress\\e2e\\add-product.cy.js",
+      "file": "cypress\\e2e\\add-product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0474f8b2-b338-4266-af62-249acdd88de6",
+          "title": "Dashboard Login Tests - Class Based",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Product to Cart",
+              "fullTitle": "Dashboard Login Tests - Class Based Add Product to Cart",
+              "timedOut": null,
+              "duration": 356,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const {\n  validUser\n} = this.userData;\n// Clean and readable test flow\ndashboardLogin.gotoUrl();\ndashboardLogin.clickTopRightLoginButton();\ndashboardLogin.clickMasuk();\ndashboardLogin.inputPhone(validUser.phoneNumber);\ndashboardLogin.inputPassword(validUser.password);\ndashboardLogin.clickSubmitButton();\ndashboardLogin.verifySuccessfulLogin();\ndashboardLogin.clickProdukTitle();\ndashboardLogin.clickButtonBuyNow();\ndashboardLogin.verifyPopUpSuccessAddProduct();\ndashboardLogin.verifyCekPesananTitle();",
+              "err": {
+                "message": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\users.json\n    > cypress\\fixtures\\users.json.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Dashboard Login Tests - Cla...`",
+                "estack": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\users.json\n    > cypress\\fixtures\\users.json.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Dashboard Login Tests - Cla...`\n    at Object.<anonymous> (<embedded>:2571:245556)\n    at Object.tryCatcher (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at Promise._fulfill (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at <unknown> (C:\\Users\\andre\\AppData\\Local\\Cypress\\Cache\\15.5.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\nodeback.js:42:21)\n    at s (<embedded>:251:108692)\n    at D.<anonymous> (<embedded>:2565:172116)\n    at D.emit (node:events:519:28)\n    at D._finish (<embedded>:2565:173046)\n    at d (<embedded>:2565:172437)\n    at D._processSimple2 (<embedded>:2565:178203)\n    at <unknown> (<embedded>:2565:178056)\n    at D._stat2 (<embedded>:2565:179121)\n    at <unknown> (<embedded>:2565:178968)\n    at s (<embedded>:1096:27266)\n    at s (<embedded>:251:108692)\n    at r (<embedded>:2636:13701)\n    at FSReqCallback.oncomplete (node:fs:197:21)",
+                "diff": null
+              },
+              "uuid": "0e2ece3a-72ec-4c0e-aa08-d763eba2f83b",
+              "parentUUID": "0474f8b2-b338-4266-af62-249acdd88de6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0e2ece3a-72ec-4c0e-aa08-d763eba2f83b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 356,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

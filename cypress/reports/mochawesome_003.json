@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-08T15:08:33.528Z",
+    "end": "2025-11-08T15:08:44.228Z",
+    "duration": 10700,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c5482163-009e-4752-a147-f543c8877b20",
+      "title": "",
+      "fullFile": "cypress\\e2e\\add-product.cy.js",
+      "file": "cypress\\e2e\\add-product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "77e8e0e6-aef2-49ef-aac3-78fb60611f0a",
+          "title": "Dashboard Login Tests - Class Based",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Product to Cart",
+              "fullTitle": "Dashboard Login Tests - Class Based Add Product to Cart",
+              "timedOut": null,
+              "duration": 10014,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const {\n  validUser\n} = this.userData;\n// Clean and readable test flow\ndashboardLogin.gotoUrl();\ndashboardLogin.clickTopRightLoginButton();\ndashboardLogin.clickMasuk();\ndashboardLogin.inputPhone(validUser.phoneNumber);\ndashboardLogin.inputPassword(validUser.password);\ndashboardLogin.clickSubmitButton();\ndashboardLogin.verifySuccessfulLogin();\ndashboardLogin.clickProdukTitle();\ndashboardLogin.clickButtonBuyNow();\ndashboardLogin.verifyPopUpSuccessAddProduct();\ndashboardLogin.verifyCekPesananTitle();",
+              "err": {},
+              "uuid": "d134ae10-704a-4af7-af99-471f64fdeb0d",
+              "parentUUID": "77e8e0e6-aef2-49ef-aac3-78fb60611f0a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d134ae10-704a-4af7-af99-471f64fdeb0d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10014,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

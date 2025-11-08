@@ -1,0 +1,11 @@
+{
+  "validUser": {
+    "email": "quibeeking@gmail.com",
+    "phoneNumber": "89613346334",
+    "password": "@Asd123456"
+  },
+  "invalidUser": {
+    "email": "invalid@example.com",
+    "password": "wrongpassword"
+  }
+}

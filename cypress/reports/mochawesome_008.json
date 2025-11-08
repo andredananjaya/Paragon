@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-11-08T15:22:29.275Z",
+    "end": "2025-11-08T15:22:29.665Z",
+    "duration": 390,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "13cd35f4-a72b-4af6-b9e9-7729d0afe967",
+      "title": "",
+      "fullFile": "cypress\\e2e\\add-product.cy.js",
+      "file": "cypress\\e2e\\add-product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d54a42a1-b95f-4af4-a118-dd47ff243e23",
+          "title": "Dashboard Login Tests - Class Based",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Product to Cart",
+              "fullTitle": "Dashboard Login Tests - Class Based Add Product to Cart",
+              "timedOut": null,
+              "duration": 349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const {\n  validUser\n} = this.userData;\n// Clean and readable test flow\ndashboardLogin.gotoUrl();\ndashboardLogin.clickTopRightLoginButton();\ndashboardLogin.clickMasuk();\ndashboardLogin.inputPhone(validUser.phoneNumber);\ndashboardLogin.inputPassword(validUser.password);\ndashboardLogin.clickSubmitButton();\ndashboardLogin.verifySuccessfulLogin();\ndashboardLogin.clickProdukTitle();\ndashboardLogin.clickButtonBuyNow();\ndashboardLogin.verifyPopUpSuccessAddProduct();\ndashboardLogin.verifyCekPesananTitle();",
+              "err": {
+                "message": "TypeError: Cannot set properties of undefined (setting 'userData')\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Dashboard Login Tests - Cla...`",
+                "estack": "TypeError: Cannot set properties of undefined (setting 'userData')\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Dashboard Login Tests - Cla...`\n    at Context.eval (webpack:///./cypress/e2e/add-product.cy.js:10:19)\n    at getRet (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:122243:20)\n    at tryCatcher (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:122254:66)\n    at Context.then (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:122505:21)\n    at wrapped (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:145577:19)\n    at <unknown> (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:151524:15)\n    at tryCatcher (https://recruitment-staging-queenbee.paradev.io/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "e403ea27-c46d-4399-bb93-f90330a57316",
+              "parentUUID": "d54a42a1-b95f-4af4-a118-dd47ff243e23",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e403ea27-c46d-4399-bb93-f90330a57316"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 349,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
