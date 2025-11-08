@@ -66,31 +66,3 @@ To run a specific test:
 ```bash
 npx cypress run --spec "cypress/e2e/add-product.cy.js"
 ```
-
-## Test Flow
-
-### Add Product to Cart
-
-The `add-product.cy.js` test automates the following flow:
-
-1.  **Open the base URL.**
-2.  **Click the top-right login button.**
-3.  **Click "Masuk".**
-4.  **Enter the phone number and password.**
-5.  **Click the "Masuk" button.**
-6.  **Verify successful login.**
-7.  **Click the "Produk" title.**
-8.  **Click the "Beli Sekarang" (Buy Now) button.**
-9.  **Verify the product added success pop-up.**
-10. **Verify the "Cek Pesanan" (Check Order) title.**
-
-## Reporting
-
-This project is configured to generate HTML test reports using `mochawesome`. After running the tests, the reports will be available in the `cypress/reports` directory.
-
-To merge multiple reports and create a single HTML report:
-
-```bash
-npx mochawesome-merge cypress/reports/*.json > mochawesome.json
-npx marge mochawesome.json
-```
